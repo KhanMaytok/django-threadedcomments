@@ -8,6 +8,7 @@ import sys
 
 
 # When creating the sdist, make sure the django.mo file also exists:
+"""
 if 'sdist' in sys.argv or 'develop' in sys.argv:
     os.chdir('threadedcomments')
     try:
@@ -18,7 +19,7 @@ if 'sdist' in sys.argv or 'develop' in sys.argv:
             raise
     finally:
         os.chdir('..')
-
+"""
 
 def read(*parts):
     file_path = path.join(path.dirname(__file__), *parts)
